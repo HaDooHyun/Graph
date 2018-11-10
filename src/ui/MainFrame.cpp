@@ -12,7 +12,6 @@ MainFrame::MainFrame(wxWindow *parent, wxWindowID id, const wxString &title,
 {
     DrawPanel * draw_panel = new DrawPanel(this, wxID_ANY, wxDefaultPosition, wxDefaultSize, wxBORDER_SIMPLE);
     draw_panel->setZoneColor(0xFFFFFF);
-    draw_panel->setXLine(0, 3, 21);
     wxBoxSizer * vsizer = new wxBoxSizer(wxVERTICAL);
     vsizer->Add(draw_panel, 1, wxEXPAND);
     this->SetSizer(vsizer);
